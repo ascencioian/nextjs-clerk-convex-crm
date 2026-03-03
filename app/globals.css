@@ -4,6 +4,8 @@
   --background: #f7f8f6;
   --foreground: #1f2937;
   --surface: #ffffff;
+  --accent: #0f766e;
+  --accent-strong: #115e59;
 }
 
 @theme inline {
@@ -18,6 +20,8 @@
     --background: #0f1115;
     --foreground: #f3f4f6;
     --surface: #181d26;
+    --accent: #14b8a6;
+    --accent-strong: #0d9488;
   }
 }
 

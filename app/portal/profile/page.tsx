@@ -5,6 +5,7 @@ import { UserButton } from "@clerk/nextjs";
 import { useMutation, useQuery } from "convex/react";
 import { ChangeEvent, FormEvent, KeyboardEvent, useEffect, useMemo, useState } from "react";
 import { api } from "@/convex/_generated/api";
+import type { Id } from "@/convex/_generated/dataModel";
 
 type ProfileFormState = {
   businessName: string;
@@ -202,7 +203,7 @@ export default function ProfilePage() {
         throw new Error("Headshot upload failed.");
       }
 
-      const { storageId } = (await uploadResponse.json()) as { storageId: string };
+      const { storageId } = (await uploadResponse.json()) as { storageId: Id<"_storage"> };
       await setMyHeadshot({ storageId });
       setSaveMessage("Headshot uploaded.");
     } catch (error) {

@@ -1,0 +1,21 @@
+export type LandingBusinessProfile = {
+  businessName: string;
+  aboutMe: string;
+  businessPhone: string;
+  emergencyPhone: string;
+  workingHoursText: string;
+  services: Array<string>;
+  yearsOfExperience: number | null;
+  regionCovered: string;
+  howYouCharge: string;
+  worksResidential: boolean;
+  worksCommercial: boolean;
+  isCertifiedOrLicensed: boolean;
+  hasBackgroundCheck: boolean;
+  isInsured: boolean;
+  facebook: string;
+  instagram: string;
+  tiktok: string;
+  snapchat: string;
+  headshotUrl: string | null;
+};
